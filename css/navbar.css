@@ -1,0 +1,43 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2125);
+}
+
+.navbar__content {
+    padding: 1rem 2rem;
+    justify-content: space-between;
+}
+
+.navbar__content-logo {
+    gap: 1rem;
+    font-size: 1.3rem;
+}
+
+.navbar__list-sections {
+    gap: 1rem;
+}
+
+.navbar__list-sections li{
+    font-family: var(--font-nav);
+    color: var(--color-text-blue);
+    font-size: 1.1rem;
+    position: relative; 
+    padding-right: 1rem;
+    font-weight: normal;
+}
+
+.navbar__list-sections li::before {
+    content: "";
+    position: absolute;
+    top: 50%; 
+    right: 0;
+    transform: translateY(-50%); 
+    width: 1px;
+    height: 1.25rem;
+    background-color: var(--color-text-blue);
+}
+
+.navbar__list-sections li:hover {
+    font-weight: bold;
+}
