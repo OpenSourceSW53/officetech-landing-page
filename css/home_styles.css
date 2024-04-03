@@ -16,6 +16,7 @@ body {
     margin: 0 5rem;
     max-width: 100%;
     z-index: 1;
+    margin-top: 3.5rem;
 }
 
 .main_content {
@@ -57,12 +58,12 @@ span{
     position: relative;
     align-items: flex-end;
     width: 120%;
-    margin-top: 2rem;
+    margin-top: 1.9rem;
     margin-left: -10rem;
     z-index: -1;
 }
 
-img {
+img{
     width: 120%;
     height: auto;
 }
