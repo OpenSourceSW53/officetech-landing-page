@@ -14,8 +14,8 @@
 
 .main_content h1 {
     font-size: 4vw;
-    background-color: #232F9B;
-    background-image: linear-gradient(to top, #232F9B 0%, #616cc7 100%);
+    background-color: var(--color-text-blue);
+    background-image: linear-gradient(to top, var(--color-text-blue) 0%, #616cc7 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -31,8 +31,8 @@
 }
 
 span{
-    background-color: #FBD864;
-    background-image: linear-gradient(to top, #dabb55 0%, #FBD864 100%);
+    background-color: var(--color-bg-yellow);
+    background-image: linear-gradient(to top, #dabb55 0%, var(--color-bg-yellow) 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -67,29 +67,29 @@ button{
     border-radius: 20px;
     font-size: 1vw;
     cursor:pointer;
-    border-color: #232F9B;
+    border-color: var(--color-text-blue);
     border-style: solid;
     transition: all 0.35s;
 }
 
 #learn_button{
-    color: white;
-    background-color: #2C3F84;
+    color: #fff;
+    background-color: var(--color-blue-dark);
 }
 
 #learn_button:hover{
-    background-color:white;
-    color:#232F9B;
+    background-color:#fff;
+    color:var(--color-text-blue);
     transform: scale(110%);
 }
 
 #start_button{
-    color: #232F9B;
+    color: var(--color-text-blue);
     background-color: transparent;
 }
 
 #start_button:hover{
-    background-color:#2C3F84;
+    background-color:var(--color-blue-dark);
     color:#fff;
     transform: scale(110%);
 }
