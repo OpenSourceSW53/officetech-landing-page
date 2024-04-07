@@ -1,0 +1,89 @@
+.abouts-image
+{
+    position: relative; /* Para posicionar absolutamente las cajas de texto */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url("/assets/test.png");
+
+}
+.abouts{
+    display: flex;
+    flex-wrap: wrap; /* Permitirá que los elementos se ajusten según el ancho de la pantalla */
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.abouts-title{
+    width: 100%;
+    color: var(--color-text-blue);
+    font-size: 2vw; /* Responsivo al ancho de la pantalla, ajusta según necesites */
+    margin-top: 3vh; /* Espacio superior relativo al alto de la pantalla */
+}
+.abouts-text {
+
+    width: 90%; /* Utiliza un porcentaje del ancho de la pantalla para la responsividad */
+    height: auto;
+    overflow-wrap: break-word; /* Evita que el texto se desborde */
+    margin-bottom: 1rem; /* Añade espacio debajo de la caja */
+    font-size: 1.5rem;
+    position: absolute;/* Posición absoluta dentro de su contenedor relativo */
+    min-width: 200px; /* Un mínimo de ancho para evitar que se vuelva demasiado pequeño */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Blanco con transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    max-width: 500px;
+
+;
+}
+
+.abouts-text.first{
+    top: 30%; /* Posición desde la parte superior del contenedor */
+    left: 5%; /* Posición desde el lado izquierdo del contenedor */
+}
+
+/* Posiciona la segunda caja de texto */
+.abouts-text.second{
+    bottom: 5%; /* Posición desde la parte inferior del contenedor */
+    right: 45%; /* Posición desde el lado derecho del contenedor */
+}
+
+@media (max-width: 800px) {
+
+    .abouts-text{
+        font-size: 2vw; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+        padding: 0.5rem; /* Reduce el padding en pantallas pequeñas */
+        max-width: 100%; /* Las cajas pueden expandirse al 100% del contenedor en pantallas pequeñas */
+        top: auto; /* Resetea las posiciones para móviles */
+        bottom: auto;
+        transform: none; /* En pantallas pequeñas, evita transformaciones que puedan desplazar el texto */
+        margin-top: 1rem; /* Añade un margen superior para espaciar los elementos verticalmente */
+
+    }
+.abouts-image{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
+}
+    .abouts-text.first{
+        top: 10%;
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+
+    .abouts-text.second{
+        bottom: 10%;
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+    .abouts-title {
+        font-size: 5.5vw;
+    }
+}
