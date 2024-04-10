@@ -8,14 +8,16 @@
 
 body {
     background-color: #DEF3FF;
+
 }
+
 
 .main_container {
     display: flex;
     justify-content: center;
     max-width: 100%;
     z-index: 1;
-    margin-top: 20rem;
+    margin-top: 25rem;
 }
 
 .main_content {
@@ -28,6 +30,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 40px;
 }
 
 .step {
@@ -73,11 +76,16 @@ img{
 @media screen and (max-width:920px ){
     .main_container {
         flex-direction: column;
+        margin-top: 8rem;
     }
 
     .main_content {
         margin-top: 2rem;
         text-align: center;
+    }
+
+    .step-container{
+        margin-top: 3rem;
     }
 
 }

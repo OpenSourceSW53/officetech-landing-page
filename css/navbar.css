@@ -1,5 +1,6 @@
 .navbar {
     width: 100%;
+    z-index: 100000;
     position: fixed;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2125);
     top:0;
