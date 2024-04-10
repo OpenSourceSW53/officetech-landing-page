@@ -8,13 +8,14 @@
     background-position: center;
     background-size: cover;
     background-image: url("/assets/test.png");
-
+    padding: 2rem;
 }
 .abouts{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
+    margin: 5rem 0;
 }
 
 .abouts-title{
@@ -32,13 +33,10 @@
     font-size: 1.5rem;
     position: absolute;
     min-width: 200px;
-    background: rgba(255, 255, 255, 0.8); /
+    background: rgba(255, 255, 255, 0.8); 
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 10;
     max-width: 500px;
-
-;
 }
 
 .abouts-text.first{
