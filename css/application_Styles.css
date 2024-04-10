@@ -1,0 +1,58 @@
+.applications_container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 5rem;
+}
+
+.step-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step {
+    background-color: #FBD864;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 0 5rem;
+    border-radius: 15px;
+    width: 250px; /* Ancho fijo */
+    height: 150px; /* Altura fija */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step p {
+    font-size: 1vw;
+    text-align: center;
+}
+
+.circle {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:920px ){
+    .applications_container {
+        flex-direction: column;
+        margin-top: 8rem;
+    }
+
+    .step-container{
+        margin-top: 3rem;
+    }
+
+}
