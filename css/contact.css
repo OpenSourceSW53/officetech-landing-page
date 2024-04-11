@@ -157,7 +157,7 @@ h3{
     align-items: center;
 }
 
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1450px) {
     .contact__content {
         flex-direction: column;
         padding-top: 2rem;
