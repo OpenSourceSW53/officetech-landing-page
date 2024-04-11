@@ -3,6 +3,7 @@
     justify-content: center;
     max-width: 100%;
     padding: 5rem;
+    margin-top: 5rem;
 }
 
 .step-container{
@@ -18,41 +19,70 @@
     padding: 2rem;
     margin: 0 5rem;
     border-radius: 15px;
-    width: 250px; /* Ancho fijo */
-    height: 150px; /* Altura fija */
+    max-width: 350px;
+    height: 350px;
+    max-height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .step p {
-    font-size: 1vw;
+    font-size: 1.5vw;
     text-align: center;
+    padding: 1rem 0;
 }
 
 .circle {
     position: absolute;
-    top: -15px;
+    top: -33%;
     left: 50%;
     transform: translateX(-50%);
     background-color: white;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
     text-align: center;
     line-height: 40px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.circle p {
+    font-size: 4vw;
+    color: var(--color-blue-dark);
+}
 
-@media screen and (max-width:920px ){
+@media screen and (min-width: 1700px) {
+    .step {
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width:1200px ){
     .applications_container {
         flex-direction: column;
-        margin-top: 8rem;
+        gap: 5rem;
     }
 
     .step-container{
         margin-top: 3rem;
     }
+
+    .step {
+        max-width: 350px;
+        max-height: 180px;
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
 
 }
